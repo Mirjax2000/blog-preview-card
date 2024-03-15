@@ -4,6 +4,53 @@
 /* --- home main --- */
 // --------------------
 
+.home {
+    font-family: $font-family-Figtree;
+    font-optical-sizing: auto;
+    background-color: $clr-bg-body ;
+    height: 100dvh;
+    width: 100dvw;
+    @include flexCenter;
+}
+
+.container,
+.card__img {
+    overflow: hidden;
+    border-radius: em($br-card, 16);
+}
+
+.container {
+    max-width: em(384, 16);
+    border: 1px solid $clr-br;
+    box-shadow: em(16, 16) em(16, 16) em(0, 16) black;
+}
+
+.card {
+    background-color: $clr-bg-card;
+    padding: em(24, 16);
+
+    h3 {
+        display: inline-block;
+        font-size: var(--bodyS); //14px
+        font-weight: 800;
+        line-height: em(21, 14);
+        color: $clr-txt-H3;
+    }
+
+    &__content {
+        h3 {
+            background-color: $clr-bg-h2 ;
+        }
+    }
+
+}
 
 
 
+// /* Body S (Bold) */
+// font-family: 'Figtree';
+// font-style: normal;
+// font-weight: 800;
+// font-size: 14px;
+// line-height: 150%;
+// /* identical to box height, or 21px */

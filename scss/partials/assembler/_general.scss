@@ -15,13 +15,3 @@ html {
     @include selection ($clr-bg-body);
     font-size: var(--font-size);
 }
-
-
-body {
-    font-family: $font-family-Figtree;
-    font-optical-sizing: auto;
-    background-color: $clr-bg-body ;
-    height: 100dvh;
-    width: 100dvw;
-    @include flexCenter;
-}

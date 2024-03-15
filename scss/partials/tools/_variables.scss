@@ -11,7 +11,7 @@ $debug: false;
 $clr10: #ffffff; //White
 $clr11: #f4d04e; //Primary
 $clr12: #808080; //Gray
-$clr13: #1F314F; //Dark Navy
+$clr13: black; //Black
 $clr14: #7D889E; //Grey
 $clr15: #D5E1EF; //Light Grey
 
@@ -20,11 +20,13 @@ $clr15: #D5E1EF; //Light Grey
 
 // text Heading
 $clr-txt-heading: $clr13;
-// text Body
-$clr-txt-body: $clr14;
 
-// Header title, H2-awesome,H3-MyPortfolio,H2 H3-bottom
-$clr-txt-title: $clr10;
+// text H2
+$clr-txt-H2: $clr13;
+
+// text H3
+$clr-txt-H3: $clr13;
+
 
 // navigation links
 $clr-txt-navlinks: $clr10;
@@ -51,7 +53,8 @@ $clr-txt-btn: $clr10;
 
 // backround color
 
-$clr-bg-body: $clr13;
+$clr-bg-body: $clr14;
+$clr-bg-h2: $clr14;
 
 $clr-bg-card: $clr10;
 
@@ -64,8 +67,6 @@ $clr-bg-active: $clr10;
 $clr-bg-footer: $clr10;
 
 // -------------------------
-
-
 
 $backroundGradient: (
     98.96% 98.96% at 50% 0%,
@@ -85,8 +86,10 @@ $font-family-serif: Georgia, Times, 'Times New Roman', serif;
 // --- border-radius ---
 $br-card: 20;
 $br-qrCode: 10;
+// ----------------------
 
-
+// border color
+$clr-br: $clr13 ;
 // --- break points ---
 
 // -------------------------------
@@ -113,7 +116,7 @@ $bodyMMin: 1.083rem; //17.3px
 $bodyMMni: .9125rem; //14.6px
 
 // body S
-$bodySMax: rem(14, 0); //26.6px
+$bodySMax: rem(14, 0); //14
 $bodySMid: 1.4581rem; //23.3px
 $bodySMin: 1.3538rem; //21.6px
 $bodySMSni: 1.1438rem; //18.3px

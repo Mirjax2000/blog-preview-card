@@ -294,18 +294,20 @@ html {
   font-size: var(--font-size);
 }
 html ::-moz-selection {
-  background-color: #1F314F;
+  background-color: #7D889E;
   color: white;
 }
 html ::selection {
-  background-color: #1F314F;
+  background-color: #7D889E;
   color: white;
 }
 
-body {
+/*  --- header --- */
+/* --- home main --- */
+.home {
   font-family: Figtree, sans-serif;
   font-optical-sizing: auto;
-  background-color: #1F314F;
+  background-color: #7D889E;
   height: 100dvh;
   width: 100dvw;
   display: -webkit-box;
@@ -319,7 +321,33 @@ body {
           align-items: center;
 }
 
-/*  --- header --- */
-/* --- home main --- */
+.container,
+.card__img {
+  overflow: hidden;
+  border-radius: 1.25em;
+}
+
+.container {
+  max-width: 24em;
+  border: 1px solid black;
+  -webkit-box-shadow: 1em 1em 0em black;
+          box-shadow: 1em 1em 0em black;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5em;
+}
+.card h3 {
+  display: inline-block;
+  font-size: var(--bodyS);
+  font-weight: 800;
+  line-height: 1.5em;
+  color: black;
+}
+.card__content h3 {
+  background-color: #7D889E;
+}
+
 /* mediaqueries */
 /*# sourceMappingURL=home.css.map */
