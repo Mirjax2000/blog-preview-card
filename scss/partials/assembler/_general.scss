@@ -1,0 +1,139 @@
+@use '../tools/' as *;
+
+// ----------------------------
+/*   --- general settings --- */
+// ----------------------------
+
+$debug: false;
+
+
+/* --- general settings --- */
+
+// --- HTML settings: box sizing, selection
+html {
+    @include box-sizing (border-box);
+    @include selection ($clr-bg-qrCode);
+    font-size: var(--font-size);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    vertical-align: middle;
+    height: auto;
+    width: 100%;
+}
+
+body {
+    font-family: $font-family-Outfit;
+    font-optical-sizing: auto;
+    background-color: $clr-bg-body ;
+    height: 100dvh;
+    width: 100dvw;
+    @include flexCenter;
+}
+
+.container {
+    background-color: $clr-bg-card ;
+    width: em(320, 16);
+    height: em(497, 16);
+    border-radius: em($br-card, 16);
+
+    filter: drop-shadow(0px 4px 4px #00000040);
+
+    .card {
+        padding: em(16, 16) em(16, 16);
+        text-align: center;
+
+        &__qrCode {
+            background-color: $clr-bg-qrCode ;
+            width: em(288, 16);
+            aspect-ratio: 1/1;
+            border-radius: em($br-qrCode, 16);
+            @include flexCenter;
+
+            margin-bottom: em(24, 16);
+            overflow: hidden;
+            position: relative;
+
+            &::after,
+            &::before {
+                position: absolute;
+                content: "";
+                border-radius: 50%;
+                background-color: $clr-bg-circle ;
+                aspect-ratio: 1/1;
+            }
+
+            &::after {
+                width: em(328, 16);
+                bottom: em(125, 16);
+                right: em(92, 16);
+                z-index: 10;
+            }
+
+            &::before {
+                width: em(270, 16);
+                left: em(130, 16);
+                top: em(204, 16);
+                z-index: 20;
+            }
+
+            .qrCode--img {
+                position: relative;
+                z-index: 100;
+            }
+        }
+
+        &__content {
+            padding-inline: em(16, 16);
+
+            h2 {
+                font-size: var(--heading);
+                font-weight: 700;
+                line-height: em(28, 22);
+                color: $clr-txt-heading;
+                padding-bottom: em(16, 22);
+            }
+
+            p {
+                font-size: var(--body);
+                font-weight: 400;
+                line-height: em(19, 15);
+                letter-spacing: em(0.1875, 15);
+                color: $clr-txt-body ;
+            }
+        }
+
+    }
+}
+
+
+// // backround pro font awesome icony
+// @each $icon, $color in $icons-color {
+
+//     .#{$icon} {
+//         background-color: $color;
+
+//         &:hover:not(.flash, .cog, .star),
+//         &:focus {
+//             background-color: lighten($color , 10);
+//         }
+//     }
+// }
+
+
+// @media only screen and (max-width: 1680px) {
+//     :root {
+//         --font-size:#{$font-size-90};
+//         --h1-title:#{$h1mid};
+//     }
+
+//     html {
+//         font-size: var(--font-size);
+//     }
+// }
