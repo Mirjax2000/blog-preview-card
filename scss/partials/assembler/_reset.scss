@@ -34,3 +34,9 @@ img {
     height: auto;
     vertical-align: middle;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
