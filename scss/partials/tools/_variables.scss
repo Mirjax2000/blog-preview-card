@@ -27,28 +27,19 @@ $clr-txt-H2: $clr13;
 // text H3
 $clr-txt-H3: $clr13;
 
+// text p
+$clr-txt-p: $clr12;
+
 
 // navigation links
 $clr-txt-navlinks: $clr10;
 
-// hero
-$clr-txt-H2Header: $clr10;
-
-// icons
-$clr-icons: $clr10;
 
 // awesome,MyPortfolio paragraph
 $clr-txt-par: $clr10;
 
 // footer paragraph
 $clr-txt-footer-par: $clr10;
-
-// footer links
-$clr-txt-footer-links: $clr10;
-
-// buttons
-$clr-txt-btn: $clr10;
-
 // -------------------------
 
 // backround color
@@ -104,13 +95,13 @@ $font-size-80: 80%;
 
 
 // heading
-$headingMax: rem(24, 0); //22px
+$headingMax: rem(24, 0); //24
 $headingMid: rem(32, 10); //32px
 $headingMin: rem(32, 20); //16px
 $headingMni: 1.37rem; //22px
 
 // body M
-$bodyMMax: rem(16, 0); //15px
+$bodyMMax: rem(16, 0); //16
 $bodyMMid: 1.166rem; //18.6px
 $bodyMMin: 1.083rem; //17.3px
 $bodyMMni: .9125rem; //14.6px

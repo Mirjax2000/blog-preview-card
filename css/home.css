@@ -338,15 +338,32 @@ html ::selection {
   background-color: #ffffff;
   padding: 1.5em;
 }
-.card h3 {
-  display: inline-block;
+.card h1,
+.card h2,
+.card h3,
+.card p {
   font-size: var(--bodyS);
   font-weight: 800;
   line-height: 1.5em;
   color: black;
 }
+.card__content h1 {
+  font-size: var(--heading);
+  line-height: 1.5em;
+  margin-block: 0.5em;
+}
 .card__content h3 {
+  display: inline-block;
   background-color: #7D889E;
+  margin-top: 1.7142857143em;
+  margin-bottom: 0.8571428571em;
+  padding: 0.2857142857em 0.8571428571em;
+}
+.card__content p {
+  font-weight: 500;
+  color: #808080;
+  font-size: var(--bodyM);
+  line-height: 1.5em;
 }
 
 /* mediaqueries */
