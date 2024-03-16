@@ -9,7 +9,8 @@ $debug: false;
 
 // --- colors ---
 $clr10: #ffffff; //White
-$clr11: #f4d04e; //Primary
+// $clr11: #f4d04e; //Primary
+$clr11: gray; //Primary
 $clr12: #808080; //Gray
 $clr13: black; //Black
 $clr14: #7D889E; //Grey
@@ -20,6 +21,7 @@ $clr15: #D5E1EF; //Light Grey
 
 // text Heading
 $clr-txt-heading: $clr13;
+$clr-txt-heading-hover: $clr11;
 
 // text H2
 $clr-txt-H2: $clr13;
@@ -44,14 +46,11 @@ $clr-txt-footer-par: $clr10;
 
 // backround color
 
-$clr-bg-body: $clr14;
-$clr-bg-h2: $clr14;
+$clr-bg-body: $clr11;
+
+$clr-bg-h2: $clr11;
 
 $clr-bg-card: $clr10;
-
-$clr-bg-qrCode: $clr11;
-
-$clr-bg-circle: $clr12;
 
 $clr-bg-active: $clr10;
 
