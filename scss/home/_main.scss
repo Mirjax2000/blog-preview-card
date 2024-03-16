@@ -22,14 +22,13 @@
 .container {
     max-width: em(384, 16);
     border: 1px solid $clr-br;
-    box-shadow: em(16, 16) em(16, 16) em(0, 16) black;
+    box-shadow: em(16, 16) em(16, 16) em(0, 16) $clr-shd;
 }
 
 .card {
     background-color: $clr-bg-card;
     padding: em(24, 16);
 
-    h1,
     h2,
     h3 {
         font-size: var(--bodyS); //14px
@@ -39,9 +38,12 @@
     }
 
     &__content {
-        h1 {
+        h1 a {
             font-size: var(--heading); //24px
+            font-weight: 800;
             line-height: em(36, 24);
+            color: $clr-txt-H1;
+
             margin-block: em(12, 24);
             transition: ease-in-out .2s color;
 
@@ -53,6 +55,7 @@
 
         h2 {
             font-weight: 500;
+            color: $clr-txt-H2;
         }
 
         h3 {

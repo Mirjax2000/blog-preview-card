@@ -1,27 +1,26 @@
 @use './functions' as *;
-
 // ---------------------
 //   --- Variables ---
 // ---------------------
-
 
 $debug: false;
 
 // --- colors ---
 $clr10: #ffffff; //White
-// $clr11: #f4d04e; //Primary
-$clr11: gray; //Primary
+$clr11: #f4d04e; //Primary
 $clr12: #808080; //Gray
 $clr13: black; //Black
 $clr14: #7D889E; //Grey
 $clr15: #D5E1EF; //Light Grey
-
-
+// -----------------------
 // font color
 
 // text Heading
 $clr-txt-heading: $clr13;
 $clr-txt-heading-hover: $clr11;
+
+// text H1
+$clr-txt-H1: $clr13;
 
 // text H2
 $clr-txt-H2: $clr13;
@@ -32,20 +31,14 @@ $clr-txt-H3: $clr13;
 // text p
 $clr-txt-p: $clr12;
 
-
 // navigation links
 $clr-txt-navlinks: $clr10;
-
-
-// awesome,MyPortfolio paragraph
-$clr-txt-par: $clr10;
 
 // footer paragraph
 $clr-txt-footer-par: $clr10;
 // -------------------------
 
 // backround color
-
 $clr-bg-body: $clr11;
 
 $clr-bg-h2: $clr11;
@@ -55,7 +48,6 @@ $clr-bg-card: $clr10;
 $clr-bg-active: $clr10;
 
 $clr-bg-footer: $clr10;
-
 // -------------------------
 
 $backroundGradient: (
@@ -64,7 +56,6 @@ $backroundGradient: (
     #181E27 100%
 );
 // --------------------------------
-
 
 // --- fonts ---
 $font-family-SourceSans: "Source Sans 3", sans-serif;
@@ -80,18 +71,20 @@ $br-qrCode: 10;
 
 // border color
 $clr-br: $clr13 ;
+// ----------------------
+
+// shadow color
+$clr-shd: $clr13 ;
+// ----------------------
+
 // --- break points ---
-
 // -------------------------------
-
 
 // --- font-sizes ---
 $font-size-110: 110%;
 $font-size-100: 100%;
 $font-size-90: 90%;
-$font-size-80: 80%;
 // --------------------------------
-
 
 // heading
 $headingMax: rem(24, 0); //24
@@ -110,12 +103,6 @@ $bodySMax: rem(14, 0); //14
 $bodySMid: 1.4581rem; //23.3px
 $bodySMin: 1.3538rem; //21.6px
 $bodySMSni: 1.1438rem; //18.3px
-
-// paragraph
-// $pgmax: $navmax; //21.3px
-// $pgmid: $navmid; //18.6px
-// $pgmin: $navmin; //17.3px
-// $pgmni: $navmni; //14.6px
 
 //footer
 $footmax: 1.20rem; //19.2px
