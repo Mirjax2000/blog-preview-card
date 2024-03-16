@@ -411,7 +411,7 @@ html ::selection {
   .card__img img {
     -o-object-fit: cover;
        object-fit: cover;
-    height: 12.5em;
+    min-height: 12.5em;
   }
 }
 /*# sourceMappingURL=home.css.map */
