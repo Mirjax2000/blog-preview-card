@@ -352,6 +352,9 @@ html ::selection {
   line-height: 1.5em;
   margin-block: 0.5em;
 }
+.card__content h2 {
+  font-weight: 500;
+}
 .card__content h3 {
   display: inline-block;
   background-color: #7D889E;
@@ -360,8 +363,8 @@ html ::selection {
   padding: 0.2857142857em 0.8571428571em;
 }
 .card__content p {
-  font-weight: 500;
   color: #808080;
+  font-weight: 500;
   font-size: var(--bodyM);
   line-height: 1.5em;
 }

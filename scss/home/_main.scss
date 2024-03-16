@@ -46,10 +46,10 @@
             margin-block: em(12, 24);
         }
 
-        h2
-         {
+        h2 {
+            font-weight: 500;
         }
-        
+
         h3 {
             display: inline-block;
             background-color: $clr-bg-h2 ;
@@ -57,12 +57,14 @@
             margin-bottom: em(12, 14);
             padding: em(4, 14) em(12, 14);
         }
-        
+
         p {
-            font-weight: 500;
+
             color: $clr-txt-p ;
+            font-weight: 500;
             font-size: var(--bodyM); //16px
             line-height: em(24, 16);
         }
     }
+
 }
