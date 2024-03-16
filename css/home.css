@@ -4,6 +4,7 @@
   --heading:1.5rem;
   --bodyM:1rem;
   --bodyS:0.875rem;
+  --footerH3:0.875rem;
 }
 
 /*   --- normalize css --- */
@@ -388,6 +389,28 @@ html ::selection {
   max-width: 2em;
   aspect-ratio: 1/1;
 }
+.card__footer h3 {
+  font-size: var(--footerH3);
+}
 
 /* mediaqueries */
+@media only screen and (max-width: 980px) {
+  :root {
+    --font-size:100%;
+    --heading:1.25rem;
+    --bodyM:0.875rem;
+    --bodyS:0.75rem;
+    --footerH3:0.875rem;
+  }
+  .container {
+    max-width: 20.4375em;
+    border: 1px solid black;
+    -webkit-box-shadow: 0.5em 0.5em 0em black;
+            box-shadow: 0.5em 0.5em 0em black;
+  }
+  .card__img img {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+}
 /*# sourceMappingURL=home.css.map */

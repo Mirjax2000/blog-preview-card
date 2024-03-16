@@ -87,26 +87,26 @@ $font-size-90: 90%;
 // --------------------------------
 
 // heading
-$headingMax: rem(24, 0); //24
-$headingMid: rem(32, 10); //32px
+$headingMax: rem(24, 0); //24px
+$headingMid: rem(20, 0); //20px
 $headingMin: rem(32, 20); //16px
 $headingMni: 1.37rem; //22px
 
 // body M
 $bodyMMax: rem(16, 0); //16
-$bodyMMid: 1.166rem; //18.6px
+$bodyMMid: rem(14, 0); //14
 $bodyMMin: 1.083rem; //17.3px
 $bodyMMni: .9125rem; //14.6px
 
 // body S
 $bodySMax: rem(14, 0); //14
-$bodySMid: 1.4581rem; //23.3px
+$bodySMid: rem(12, 0); //12
 $bodySMin: 1.3538rem; //21.6px
 $bodySMSni: 1.1438rem; //18.3px
 
 //footer
-$footmax: 1.20rem; //19.2px
-$footmid: 1.05rem; //16.8px
+$footH3Max: rem(14, 0); //14px
+$footH3Mid: rem(14, 0); //14px
 $footmin: .975rem; //15.6px
 $footmni: .825rem; //13.2px
 // --------------------------------
