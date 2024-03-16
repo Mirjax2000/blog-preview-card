@@ -394,7 +394,7 @@ html ::selection {
 }
 
 /* mediaqueries */
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 780px) {
   :root {
     --font-size:100%;
     --heading:1.25rem;
